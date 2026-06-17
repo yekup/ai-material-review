@@ -13,9 +13,12 @@ export interface Asset {
   priority: number
   description: string
   aiSummary: string
+  aiSuggestedName: string
   aiSuggestedTags: string[]
   notes: string
   createdAt: string
+  /** 评审提交时间（由 submitReview 设置） */
+  reviewedAt?: string | null
 }
 
 export interface ReviewConfig {
@@ -49,5 +52,6 @@ export interface FilterState {
 
 export interface AISuggestion {
   summary: string
+  suggestedName: string
   suggestedTags: string[]
 }

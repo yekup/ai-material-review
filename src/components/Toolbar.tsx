@@ -15,11 +15,6 @@ export default function Toolbar() {
     const mode = v as 'grid' | 'detail' | 'compare'
     const state = useStore.getState()
 
-    if (mode === 'detail' && !state.selectedAssetId) {
-      message.info('请先在网格中点击一个素材卡片查看详情')
-      return
-    }
-
     if (mode === 'compare' && state.compareList.length === 0) {
       message.warning('请先在网格中勾选要对比的素材（点击复选框）')
       return
