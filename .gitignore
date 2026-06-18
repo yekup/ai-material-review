@@ -2,5 +2,6 @@ node_modules
 dist
 .vite
 *.local
+.env
 AI使用说明.md
 
