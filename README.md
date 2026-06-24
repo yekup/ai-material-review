@@ -89,9 +89,7 @@ ai-material-review/
 └── tsconfig.json
 ```
 
-## 面试题
 
-详见 [面试题.html](面试题.html)（共 25 题，覆盖架构、3D 渲染、状态管理、AI Mock、Bug 修复、扩展思考）
 
 ## License
 
